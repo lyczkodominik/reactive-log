@@ -1,27 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <ReactiveLog/>
+  <StateToggler/>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+import {Options, Vue} from 'vue-class-component';
+import ReactiveLog from './components/ReactiveLog.vue';
+import StateToggler from './components/StateToggler.vue';
 
 @Options({
   components: {
-    HelloWorld,
-  },
+    ReactiveLog,
+    StateToggler
+  }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+}
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: #115072;
 }
 </style>
